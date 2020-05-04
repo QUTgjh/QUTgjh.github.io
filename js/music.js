@@ -3,6 +3,7 @@ var mymusic = document.getElementById("mymusic")
 var txt = document.getElementById("txt");
 var con = document.getElementsByClassName("content")[0]
 var mark = true;
+mymusic.loop = true;
 
 btn.onclick = function(){
     if(mark){
