@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.photo{
+    width: 220px;
+    height: 180px;
+    background: linear-gradient(90deg,#ead6ee,#a0f1ea)fixed;
+    color: #2c606d;
+    border-radius: 15px;
+    box-shadow: 0 0 7px #ead6ee;
+    overflow: hidden; 
+}
+
+.title{
+    /* display: inline-block; */
+    width: 100%;
+    /* height: 50px; */
+    font-size: 32px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.singer{
+    width: 100%;
+    text-align: right;
+}
+
+.play{
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/开始.jpg");
+    border-radius: 100%;
+    /* background-repeat: no-repeat; */
+    margin: auto;
+}
+
+.lrc{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    margin: auto;
+    /* background-color: aqua; */
+    overflow: hidden;  
+}
+
+.lrc p{
+    line-height: 25px;
+    font-size: 15px;
+} 
+
+.content{
+    position: relative;
+} 
+
+.play.rotate{
+    -webkit-animation: rot 5s linear infinite;
+    animation: rot 5s linear infinite;
+}
+
+@keyframes rot{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
